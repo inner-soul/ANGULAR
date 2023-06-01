@@ -1,0 +1,47 @@
+<h1>{{title}}</h1>
+
+<!-- Data Binding Using Angular Expression | Interpolation {{ }} -->
+<h1 class="header">{{city.toUpperCase()}}</h1> 
+<p class="date-sec">{{getDate()}}</p>
+<p class="time-sec">{{getTime()}}</p>
+<!-- This is How We Can Use Interpolation in Different Ways -->
+<!-- ----------------------------------------------------- -->
+
+<!-- Data Binding Using Attribute Binding Method [ ] -->
+<div class="image-div" >
+    <span><img [attr.src] ="src" [attr.width]="width" [attr.height]="height"></span>
+    <span><img [src] ="londonImage" width="300" height="160px"></span>
+</div>
+<!-- This Are The Some Of The Ways Of Attribute Binding -->
+<!-- ---------------------------------------------------- -->
+
+<!-- Data Binding Using Property Binding Method [ ] -->
+<div class="textbox">
+    <input type="text" value="{{firsTName}}" disabled="{{diSAble}}">
+    <br>
+    <br>
+    <input type="text" [value]="lasTName" [disabled]="diSAble">
+</div>
+<!-- Only Remember One Thing That Whenever You Perform Boolean Operations On the Attributes or Property Kindly Use The Property Binding & Not Interpolation Method -->
+<!-- This Are The Some Of The Ways Of Property Binding -->
+<!-- ---------------------------------------------------- -->
+
+<!-- Data Binding Using Class/Style Binding Method [ ] -->
+<div>
+    <p [class.paragraph-static] ="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, eaque!</p><!-- this is the static way of class binding-->
+    <p [class.paragraph-dynamic] = "classstatus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, non?</p><!--this is the dynamic way of class binding-->
+    <p [ngClass]= "dynamicclassobject">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, non?</p> <!-- here ngclass is an directive we can use it for multiple class declaration -->
+    <p [style.color] = stylestatus >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, nostrum.</p>
+    <p [style.background-color] = "iSActive ? 'yellow' : 'green'">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, accusamus!</p>
+    <p [ngStyle]="{
+        'border': '1px dashed green',
+        'border-width':'10px',
+        'background-color':'violet',
+        'padding':'20px',
+        'margin':'20px',
+        'color':'pink'
+    }">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dolores!</p>
+    <p [ngStyle]="dynamicstyleobject">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dolores!</p>
+</div>
+<!-- This Are The Some Of The Ways Of Class/Style Binding -->
+<!-- ---------------------------------------------------- -->
