@@ -45,3 +45,23 @@
 </div>
 <!-- This Are The Some Of The Ways Of Class/Style Binding -->
 <!-- ---------------------------------------------------- -->
+
+<!-- Data Binding Using Event Binding Method [ ] -->
+<div class="binding-btn">
+    <p>{{EventData}}</p>
+    <br>
+    <button type="button" (click)="clickSave()"class="btn-child"> BINDING </button>
+</div> 
+<!-- This Are The Some Of The Ways Of Event Binding -->
+<!-- ---------------------------------------------------- -->
+
+<!-- Data Binding Using Two Way Binding Method [ ] -->
+<div>
+    <h1>{{twoway}}</h1>
+    <label for="search">Search</label>
+    <input type="text" name="search" id="search" [(ngModel)]="twoway" class="twowaybinding">
+    <!-- <h6></h6> -->
+    
+</div>
+<!-- This Are The Some Of The Ways Of Two Way Binding -->
+<!-- ---------------------------------------------------- -->

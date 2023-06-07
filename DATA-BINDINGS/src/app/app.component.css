@@ -77,3 +77,22 @@
 }
 /* ------------------------------------------ */
 
+/* CSS FOR EVENT BINDING */
+ .binding-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+ }
+ .btn-child{
+    flex-grow: 1;
+    padding: 10px;
+ }
+ /* ------------------------------------------ */
+
+ /* CSS FOR TWO WAY BINDING */
+ .twowaybinding{
+    padding: 10px;
+ }
+ 
+/* ------------------------------------------- */

@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  
   title = 'ALL BINDINGS -';
+ 
   constructor(){}
 
   ngOnInit(): void {
@@ -56,6 +58,20 @@ export class AppComponent implements OnInit{
     'padding':'20px',
     'margin':'20px',
     'color':'pink'
+ }
+
+//  ------------------------------------------------------
+
+// This Declarations Are Only For The Event Binding.
+EventData:string='Jaydeep';
+clickSave():void{
+  this.EventData = ' My Full Name Is Panchal Jaydeep Jagdish ! ';
 }
+
+// --------------------------------------------------------------
+
+// This Declarations Are Only For The Two Way Binding.
+twoway:any = '';
+// --------------------------------------------------------------
 }
 
